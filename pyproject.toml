@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speculo"
+version = "0.0.1.dev0"
+description = "Speculo: a persistent data structure for speculative context states with quantum semantics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Gerald Enrique Nelson Mc Kenzie", email = "lordxmen2k@gmail.com" },
+]
+keywords = ["llm", "speculative", "context", "quantum-inspired", "long-context"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "hypothesis>=6.0",
+]
+dev = [
+    "pytest>=7.0",
+    "hypothesis>=6.0",
+    "ruff",
+]
+
+[project.urls]
+Homepage = "https://github.com/lordxmen2k/speculo-context-processing"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

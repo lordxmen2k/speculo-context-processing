@@ -1,0 +1,44 @@
+# Secrets (PAT files for git operations)
+*_PAT.txt
+*.pat
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Project
+*.log
+*.tmp
+data/cache/
+checkpoints/
+
+# Test/cache artifacts
+.hypothesis/
+**/__pycache__/
+
+# Bench scratch
+bench/_last_*.txt
+bench/_*.txt
