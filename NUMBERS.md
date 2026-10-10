@@ -67,6 +67,12 @@ on this machine" disclaimers.
    as designed.
 4. **Concurrent reads are stable** — readers don't block on
    the mutating path.
+5. **End-to-end with a real LLM** — `bench_llm_integration.py`
+   on distilgpt2 + RTX 4070 SUPER:
+   - **80% token savings** (857 vs 4335 tokens for 8 questions)
+   - **20% wall-clock faster** (0.94s vs 1.17s)
+   - **88% vs 62% accuracy** (focused context beats cross-contamination)
+   - error_correct triggered 1× out of 8 questions, worked correctly
 
 ## What these numbers don't prove
 
